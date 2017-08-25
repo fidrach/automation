@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae640406-eb41-42ad-848b-dc1227af50f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependency/chromedriver.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/DropboxReferral.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wrapper/Browser.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,13 +16,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExecutableWrapper.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExecutableWrapper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrapper/ExecutableWrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+            <state relative-caret-position="756">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Browser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wrapper/Browser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="86">
+              <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DropboxReferral.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/DropboxReferral.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="47" selection-end-column="54" />
+              <folding>
+                <element signature="e#106#141#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,6 +71,9 @@
         <option value="$PROJECT_DIR$/wrapper/executableWrapper.py" />
         <option value="$PROJECT_DIR$/wrapper/ExecutionResult.py" />
         <option value="$PROJECT_DIR$/wrapper/ExecutableWrapper.py" />
+        <option value="$PROJECT_DIR$/application/DropboxReferal.py" />
+        <option value="$PROJECT_DIR$/wrapper/Browser.py" />
+        <option value="$PROJECT_DIR$/application/DropboxReferral.py" />
       </list>
     </option>
   </component>
@@ -245,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503613336952</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add dependecy for chrome driver">
+      <created>1503619662109</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1503619662109</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -302,7 +337,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set up directory structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up directory structure" />
+    <MESSAGE value="Add dependecy for chrome driver" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add dependecy for chrome driver" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -362,15 +398,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/splinter/driver/webdriver/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="232" column="8" lean-forward="false" selection-start-line="232" selection-start-column="8" selection-end-line="232" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrapper/Browser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wrapper/ExecutableWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        <state relative-caret-position="756">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/DropboxReferral.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="47" selection-end-column="54" />
+          <folding>
+            <element signature="e#106#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
