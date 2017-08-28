@@ -2,7 +2,7 @@ import subprocess
 import os
 
 class ExecutableWrapperException(Exception):
-    """ Standard ExecutableWrapper exception """
+    """ Generic ExecutableWrapper exception """
     pass
 
 class ExecutableWrapper(object):

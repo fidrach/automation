@@ -50,9 +50,9 @@ class Browser(object):
         timer = 0
 
         while (timer < waitTime):
-            print("DEBUG: Looping...")
+            print("DEBUG: Waiting for HTML...")
             if self.browser.is_element_present_by_xpath(xpath, timerIncrease):
-                print("DEBUG: Found Path!")
+                print("DEBUG: Found HTML!")
                 return True
             else:
                 timer += timerIncrease

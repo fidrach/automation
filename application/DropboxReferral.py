@@ -6,13 +6,19 @@ Summary:    This program automates the process of increasing a user's dropbox sp
 Note: Automation might not work in the future as it involves html scraping and UI automation
 """
 from interface.DropboxInstaller import DropboxInstaller
-from wrapper.Browser import Browser
+from interface.DropboxUninstaller import DropboxUninstaller
 from interface.TaskKill import TaskKill
+from wrapper.Browser import Browser
 from pywinauto.application import Application
 import time
 
+
+class DropboxReferralException(Exception):
+    """ Generic DropboxReferral exception """
+    pass
+
 def main():
-    mainAccountEmail = "l834542@mvrht.net"
+    mainAccountEmail = "l417265@mvrht.net"
     mainAccountPassword = "123password"
     tempAccountPassword = "123password"
     tempAccountFName = "Marcos"
@@ -46,14 +52,18 @@ def main():
     referralLink = tempEmailBrowser.waitAndGetHrefByXPath('//*[@id="ui-id-2"]/div/div[4]/table/tbody/tr/td/table[2]/tbody/tr[1]/td/a')
     tempEmailBrowser.goTo(referralLink)
     # Sign up new account
-    tempEmailBrowser.waitAndFillByName("fname", tempAccountFName)
+    signUpValidation = tempEmailBrowser.waitAndFillByName("fname", tempAccountFName)
     tempEmailBrowser.fillByName("lname", tempAccountLName, "last")
     tempEmailBrowser.fillByName("password", tempAccountPassword, "last")
     tempEmailBrowser.fillByName("email", tempAccountEmail, "last")
     tempEmailBrowser.checkByName("tos_agree", "last")
-    signUpValidation = tempEmailBrowser.clickByXPath('//*[@id="invite-register-container"]/div/form/button', "last")
+    tempEmailBrowser.clickByXPath('//*[@id="invite-register-container"]/div/form/button', "last")
 
-    assert(signUpValidation == True), "Temporary Email failed to sign up"
+    # TODO: Better check - Check if capcha appears?
+    if signUpValidation == False:
+        dropboxBrowser.close()
+        tempEmailBrowser.close()
+        raise DropboxReferralException("Temporary Email failed to sign up")
 
     # -- Install Dropbox
     print("Installing Dropbox")
@@ -82,13 +92,27 @@ def main():
     taskKill.run()
 
     # -- Uninstalling Dropbox
+    print("Uninstalling Dropbox")
+    dropboxUninstaller = DropboxUninstaller()
+    dropboxUninstaller.run()
 
+    timer = 0
+    timerIncrease = 30
+    timerLimit = 300
+
+    while(timer < timerLimit):
+        print("DEBUG: Checking if Dropbox is uninstalled")
+        if dropboxUninstaller.checkDelete():
+            break
+        else:
+            timer += timerIncrease
 
     # referral link - https://db.tt/qtp4RnDIht
 
+
     debug = input("DEBUG: Press anything to exit:")
     # dropboxBrowser.close()
-    tempEmailBrowser.close()
+    # tempEmailBrowser.close()
     return 0
 
     # app["Set Up Dropbox"].SetFocus()
