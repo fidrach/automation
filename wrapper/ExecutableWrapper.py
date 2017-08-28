@@ -29,6 +29,9 @@ class ExecutableWrapper(object):
         self.__stdout, self.__stderr = p.communicate()
         self.__returnCode = p.returncode
 
+        if self.__returnCode != 0:
+            raise ExecutableWrapperException("Return Code: {}. Program failed to execute".format(self.__returnCode))
+
     def getStdout(self):
         return self.__stdout
 

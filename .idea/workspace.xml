@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae640406-eb41-42ad-848b-dc1227af50f8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dependency/DropboxInstaller.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/DropboxInstaller.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interface/TaskKill.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/DropboxReferral.py" afterPath="$PROJECT_DIR$/application/DropboxReferral.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wrapper/Browser.py" afterPath="$PROJECT_DIR$/wrapper/Browser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wrapper/ExecutableWrapper.py" afterPath="$PROJECT_DIR$/wrapper/ExecutableWrapper.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +23,8 @@
       <file leaf-file-name="ExecutableWrapper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrapper/ExecutableWrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="651">
+              <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -31,8 +35,8 @@
       <file leaf-file-name="Browser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wrapper/Browser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+            <state relative-caret-position="1449">
+              <caret line="69" column="40" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -43,11 +47,43 @@
       <file leaf-file-name="DropboxReferral.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/DropboxReferral.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+            <state relative-caret-position="-273">
+              <caret line="53" column="65" lean-forward="true" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
               <folding>
-                <element signature="e#105#140#0" expanded="true" />
+                <element signature="e#303#358#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pywinauto/application.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-409">
+              <caret line="860" column="41" lean-forward="true" selection-start-line="860" selection-start-column="41" selection-end-line="860" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DropboxInstaller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/DropboxInstaller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="93" lean-forward="true" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskKill.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/TaskKill.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,8 +106,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/wrapper/executableWrapper.py" />
         <option value="$PROJECT_DIR$/wrapper/ExecutionResult.py" />
-        <option value="$PROJECT_DIR$/wrapper/ExecutableWrapper.py" />
         <option value="$PROJECT_DIR$/application/DropboxReferal.py" />
+        <option value="$PROJECT_DIR$/interface/TaskKill.py" />
+        <option value="$PROJECT_DIR$/interface/DropboxInstaller.py" />
+        <option value="$PROJECT_DIR$/wrapper/ExecutableWrapper.py" />
         <option value="$PROJECT_DIR$/application/DropboxReferral.py" />
         <option value="$PROJECT_DIR$/wrapper/Browser.py" />
       </list>
@@ -287,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503696035685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finish sign up for temporary account">
+      <created>1503874369957</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1503874369957</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -346,7 +391,8 @@
     <MESSAGE value="Set up directory structure" />
     <MESSAGE value="Add dependecy for chrome driver" />
     <MESSAGE value="Add dropbox referral application and browser wrapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add dropbox referral application and browser wrapper" />
+    <MESSAGE value="Finish sign up for temporary account" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish sign up for temporary account" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -420,18 +466,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrapper/ExecutableWrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="651">
+          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/interface/TaskKill.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/DropboxInstaller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="93" lean-forward="true" selection-start-line="8" selection-start-column="93" selection-end-line="8" selection-end-column="93" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pywinauto/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="860" column="41" lean-forward="true" selection-start-line="860" selection-start-column="41" selection-end-line="860" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wrapper/Browser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+        <state relative-caret-position="1449">
+          <caret line="69" column="40" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
@@ -440,10 +512,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/DropboxReferral.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        <state relative-caret-position="-273">
+          <caret line="53" column="65" lean-forward="true" selection-start-line="53" selection-start-column="65" selection-end-line="53" selection-end-column="65" />
           <folding>
-            <element signature="e#105#140#0" expanded="true" />
+            <element signature="e#303#358#0" expanded="true" />
           </folding>
         </state>
       </provider>
